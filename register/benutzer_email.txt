@@ -1,0 +1,13 @@
+Registrierung bei {:HOMEPAGE:}., am {:DATUM:}
+
+Sie haben sich bei  {:HOMEPAGE:} - registriert.
+Klicken Sie auf den folgenden Link (oder kopieren Sie den Link in 
+die Adressleiste des Browsers) um Ihre Registrierung abzuschließen: 
+{:REGISTER:}
+
+Bestätigen Sie innerhalb von {:FREISCHALTTAGE:} Tagen Ihre Registrierung.
+
+Mit freundlichen Grüßen
+ {:ADMIN:} 
+
+Diese E-Mail wurde vom System automatisch versendet.

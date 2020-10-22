@@ -1,0 +1,15 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+Die toolbar von :
+
+https://wiki.selfhtml.org/wiki/Schnell-Index/HTML
+und
+https://api-portal.digikey.com/api
+
+
+https://wiki.selfhtml.org/wiki/CSS/Selektoren/Attributselektor/Wert
+
+
+

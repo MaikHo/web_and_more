@@ -1,0 +1,390 @@
+/*
+ *  Event-Kalender - kalenderstyle.css (utf-8)
+ * - https://werner-zenk.de
+ */
+
+
+/* Link (Diese Anweisung kann entfernt werden!) */
+
+
+
+/* Kalender */
+div#kalender {
+ box-shadow: 1px 1px 10px #CFCFCF;
+ /*background-image: url(hintergrundbild.jpg);
+ background-repeat: No-Repeat;
+ background-size: Cover;*/
+}
+
+/* Tabelle */
+table#kalender {
+ font-family: Verdana, Sans-Serif;
+ background-color: #F5F5F5;
+ border-collapse: Collapse;
+ empty-cells: Hide;
+ min-width: 750px;
+ /*opacity: 0.85;*/
+ cursor: Default;
+}
+
+/* Tabelle TH */
+table#kalender th {
+ border: Solid 1px #FFFFFF;
+ font-weight: Normal;
+}
+
+/* Tabelle TD */
+table#kalender td {
+ vertical-align: Top;
+ padding: 4px;
+ border: Solid 1px #FFFFFF;
+}
+
+/* Tabelle Navigation */
+table#kalender td#navigation {
+ font-size: 1.10rem;
+ font-weight: Bold;
+ letter-spacing: 2px;
+ text-align: Center;
+ background-color: #F5F5F5;
+}
+
+table#kalender td#navigation span {
+ white-space: Nowrap;
+}
+
+/* Tabelle (child even/odd) */
+table#kalender th:nth-child(even),
+table#kalender td:nth-child(even) {
+ background-color: #F5F5F5;
+}
+table#kalender th:nth-child(odd),
+table#kalender td:nth-child(odd) {
+ background-color: #F0F0F0;
+}
+
+/* Heute */
+table#kalender td.heute {
+ background-color: #DCDCDC !important;
+}
+
+/* Ein Tag! */
+table#kalender td.eintag {
+ height: 50px;
+ cursor: Default;
+ line-height: 20px;
+ word-break: break-all;
+ transition: background-color 0.5s;
+}
+
+table#kalender td.eintag:hover {
+ color: #529EEA;
+ background-color: #E8E8E8 !important;
+}
+
+/* Kein Tag! */
+table#kalender td.keintag {
+ height: 50px;
+ color: #C5C5C5;
+ padding-left: 8px;
+ cursor: Pointer;
+ transition: background-color 0.5s;
+}
+
+table#kalender td.keintag:hover {
+ background-color: #E8E8E8;
+ color: #529EEA;
+}
+
+/* Wochenende */
+table#kalender th.wochenende {
+ background-color: #DCDCDC;
+}
+
+/* Anzeige (Event, Formular) */
+table#kalender td#anzeige {
+ font-family: Verdana, Sans-Serif;
+ font-size: 0.95rem;
+ background-color: #EDEDED;
+ padding: 0px;
+}
+
+/* Uhrzeit */
+table#kalender span.uhrzeit {
+ font-family: Arial, Sans-Serif;
+ font-size: 0.72rem;
+ color: #555555;
+}
+
+/* Feiertag */
+table#kalender span.feiertag {
+ font-family: Arial, Sans-Serif;
+ font-size: 0.72rem;
+ color: #E60000;
+}
+
+/* Aktiver Tag */
+.aktivtag {
+ box-shadow: Inset 0px 0px 100px 100px #DEEEFC;
+}
+
+/* Navigation Link */
+span.navLink {
+ font-family: Verdana, Sans-Serif;
+ font-weight: bold;
+ font-size: 20px;
+ color: #000;
+ padding: 1px 4px 1px 4px;
+ cursor: Pointer;
+ outline: Solid 1px Transparent;
+ transition: background-color,outline 0.5s;
+}
+
+span.navLink:hover {
+ background-color: #DEEEFC;
+ outline: Solid 1px #99D1FF;
+ color: #2C84DC;
+}
+
+span.navBlock {
+ min-width: 120px;
+ display: Inline-Block;
+}
+
+/* Event Link */
+span.eventLink {
+ font-family: Arial, Sans-Serif;
+ font-size: 0.72rem;
+ color: #529EEA;
+ cursor: Pointer;
+}
+
+span.eventLink:hover {
+ text-decoration: Underline;
+}
+
+span.nowrap {
+ white-space: Nowrap;
+}
+
+/* user-select */
+table#kalender td#navigation,
+ table#kalender td.eintag,
+ table#kalender td.keintag,
+ table#kalender th.wochentag,
+ table#kalender th.wochenende,
+ table#kalender span.uhrzeit,
+ table#kalender span.feiertag,
+ table#kalender span.navLink,
+ table#kalender span.eventLink {
+ -ms-user-select: None;
+ -moz-user-select: None;
+ -webkit-user-select: None;
+}
+
+mark.mark {
+ font-weight: Bold;
+ background-color: Transparent;
+ color: #529EEA;
+}
+
+mark.fehler {
+ font-weight: Bold;
+ font-size: 18px;
+ background-color: Transparent;
+ color: #FF0000;
+}
+
+/* Kalenderblatt */
+div#kalenderblatt {
+ color: #555555;
+ background-color: #FFFFFF;
+}
+
+/* Anzeige */
+form#Form,
+ p#fehler,
+ div#aktevents,
+ div#kalenderblatt {
+ color: #555555;
+ padding: 5px;
+ margin: -22px 0px 0px 5px;
+}
+
+div#anzeigeBeenden {
+ text-align: Right;
+ padding-right: 15px;
+}
+
+div#anzeigeBeenden2 {
+ display: Inline-Block;
+ text-align: Right;
+}
+
+/* Priorität */
+span.prioritaet {
+ padding: 0px 5px 0px 5px;
+ font-size: 12px;
+}
+
+div#blatt {
+ font-family: Verdana, Sans-Serif;
+ font-size: 6rem;
+ color: #707070;
+ text-align: Center;
+ float: Left;
+ line-height: 90px;
+ width: 150px;
+ padding-bottom: 5px;
+}
+
+/* Event-Anzeige  */
+dl.dl {
+ background-color: Transparent;
+}
+
+dl.dl > dd {
+ margin-left: 50px;
+}
+
+/* Formularfelder */
+table#kalender input[type="text"],
+table#kalender input[type="password"],
+table#kalender input[type="search"],
+table#kalender input[type="number"],
+table#kalender input[type="checkbox"],
+table#kalender button[type="button"],
+table#kalender textarea,
+table#kalender select {
+ border: Solid 1px #9A9A9A;
+ font-family: Verdana, Arial, Sans-Serif;
+ font-size: 0.95rem;
+ margin-top: 2px;
+ margin-bottom: 2px;
+ caret-color: #FF4500;
+}
+
+table#kalender input[type="text"]:focus,
+table#kalender input[type="password"]:focus,
+table#kalender input[type="search"]:focus,
+table#kalender input[type="number"]:focus,
+table#kalender input[type="checkbox"]:focus,
+table#kalender button[type="button"]:focus,
+table#kalender textarea:focus,
+table#kalender select:focus {
+ border: Solid 1px #0078D7;
+}
+
+table#kalender input[type="button"],
+table#kalender input[type="submit"],
+table#kalender button[type="button"] {
+ border: Solid 1px #9A9A9A;
+ background-color: #E1E1E1;
+ font-size: 0.95rem;
+}
+
+table#kalender input[type="button"]:hover,
+table#kalender input[type="submit"]:hover,
+table#kalender button[type="button"]:hover {
+ border: Solid 1px #0078D7;
+ background-color: #E5F1FB;
+}
+
+textarea#textarea {
+ width: 400px;
+ min-width: 400px;
+ max-width: 400px;
+ height: 200px;
+ min-height: 200px;
+ max-height: 400px;
+ resize: Vertical;
+}
+
+input[type="text"]#event {
+ width: 250px;
+}
+
+input[type="text"]#name {
+ width: 150px;
+}
+
+input[type="password"]#passwort {
+ width: 120px;
+}
+
+input[type="number"] {
+ width: 65px;
+}
+
+input[type=checkbox]:checked + label {
+ color: #388FE7;
+}
+
+
+/* Anpassung an mobile Kleingeräte */
+@media screen and (max-width: 35rem) {
+
+ /* Tabelle TD */
+ table#kalender td {
+  padding: 1px;
+ }
+
+ /* Feiertag */
+ table#kalender span.feiertag {
+  font-family: Arial, Sans-Serif;
+  font-size: 0.60rem;
+ }
+
+ /* Uhrzeit */
+ table#kalender span.uhrzeit {
+  font-family: Arial, Sans-Serif;
+  font-size: 0.60rem;
+  /*display: None;*/
+ }
+
+ /* Event Link */
+ span.eventLink {
+  font-family: Arial, Sans-Serif;
+  font-size: 0.60rem;
+ }
+
+ /* Formularfelder */
+ textarea#textarea {
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+  height: 200px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: Vertical;
+ }
+
+ input[type="text"]#event {
+  width: 180px;
+ }
+
+ input[type="text"]#name {
+  width: 120px;
+ }
+
+ input[type="password"]#passwort {
+  width: 80px;
+ }
+
+}
+
+
+/* Für den Ausdruck optimieren */
+@media print {
+ div#kalender {
+  box-shadow: none;
+ }
+
+ table td {
+  outline: Solid 1px #888888;
+ }
+
+ .print {
+  display: None;
+ }
+}

@@ -1,0 +1,140 @@
+Hinweise zu "MySQL-Nachrichten"
+
+Version vom: 01.09.2017
+Eine Aktuelle Version finden Sie unter:
+https://werner-zenk.de/archiv/mysql_nachrichten.php
+Dort können Sie auch Hinweise, Fehler und Verbesserungsvorschläge eintragen.
+
+
+Führen Sie folgende Anweisungen nacheinander aus:
+
+ 1. In der Datei "verbindung.php" tragen Sie Ihre Zugangsdaten (zur Datenbank) ein
+ und ändern den Namen und das Passwort (Administrator).
+Dort sind auch weitere Einstellungen möglich.
+
+ 2. Laden Sie alle Dateien auf Ihrem Webserver hoch.
+ 
+ 3. Rufen Sie die Datei "installation.php" in Ihrem Browser auf.
+ 
+ 4. Rufen Sie die Datei "nachrichten_editor.php" in Ihrem Browser auf
+ und tragen Sie Ihre ersten Nachrichten in die Datenbank ein.
+
+
+Das Einbinden der Nachrichten in eine Seite ist denkbar einfach:
+<?php include "nachrichten.php"; ?>
+
+Ein Beispiel finden Sie in der Datei: demo.php,
+dort sind auch CSS-Anweisungen enthalten um die Anzeige der Nachrichten zu formatieren.
+
+Voraussetzungen:
+Webserver (Linux) mit PHP 5.4 (und PDO-Erweiterung), eine MySQL-Datenbank 
+und Kenntnisse in HTML, CSS, JavaScript und PHP um die Scripte den 
+eigenen wünschen anpassen zu können.
+
+Wenn Sie die Dateien bearbeiten, beachten Sie das diese wieder im Zeichensatz: UTF-8 (ohne Signatur) 
+gespeichert werden müssen, andernfalls werden Umlaute im Text nicht korrekt dargestellt. 
+Mehr dazu finden Sie unter: https://werner-zenk.de/tipps/schriftzeichen_richtig_darstellen.php
+
+Nutzungsbedingungen
+ Mit dem Einsatz der Scripte akzeptieren Sie meine Nutzungsbedingungen ohne Einschränkungen.
+ Die Scripte sind für die private und kommerzielle Verwendung kostenlos.
+ Ich übernehme keinerlei Haftung bezüglich der Funktionstüchtigkeit oder irgendwelchen Schadens- 
+ oder Ersatzansprüchen, die sich bei der Nutzung der Scripte ergeben.
+ Es wird kein Support für Probleme geben, die bei der Anpassung der Scripte entstehen.
+https://werner-zenk.de/_/impressum.php
+
+Viel Spaß damit!
+ W. Zenk
+
+Version: 01.09.2017
+	Fehler in der internen Verlinkung der Nachrichten behoben.
+
+Version: 20.08.2017
+	Unicode-Symbole angepasst (wegen Microsoft Edge Browser).
+	Diverse Änderungen im Nachrichten Editor.
+
+Version: 29.04.2017
+	Nachrichten können "angepinnt" werden.
+
+
+Version: 22.01.2017
+	Änderungen im Nachrichten Editor:
+		- Die Größe des Nachrichten-Feldes lässt sich nun einfacher anpassen
+		   (Mozilla Firefox/Google Chrome/Opera)
+		- Einfachere Auswahl einer Nachricht.
+
+Version: 05.11.2016
+	Es können nun mehrere Administratoren eingetragen werden.
+
+Version: 11.08.2016
+	Fehler behoben
+
+Version: 08.12.2015
+	Sicherheits-Update
+	Fehler behoben
+
+Version: 22.08.2015
+	Benötigt PHP 5.4 oder höher.
+	UTF-8 Unterstützung, Standard-Datenbank: InnoDB.
+	In der Seitenübersicht wird nun das Datum angezeigt.
+	Die Navigation durch die Nachrichten ist jetzt auch bei deaktiviertem JavaScript möglich!
+	Verbesserungen im Editor.
+
+Version: 28.07.2014
+	Auswahlliste um die Anzahl der Nachrichten auszuwählen (Optional).
+	Verbesserungen in der Navigation.
+
+Version: 10.07.2014
+	Auswahlliste um die Nachrichten nach dem Datum oder dem Titel zu sortieren (Optional).
+	Der PHP-Code, HTML-Elemente und die CSS-Anweisungen wurden optimiert.
+
+Version: 04.02.2014
+	HTML erfolgreich getestet bei: http://html5.validator.nu und http://validator.w3.org
+	Zahlreiche Fehler behoben.
+	Hilfe zur Umstellung auf den UTF-8 Zeichensatz (Siehe: verbindung.php)
+
+Version: 19.01.2014
+	Nachrichten können nach dem Datum oder Titel sortiert werden.
+	Vorschau-Funktion im Editor verbessert.
+	Sortierung der Kategorien im Editor.
+
+Version: 21.12.2013
+	Verbesserte Suchfunktion.
+	Fehler beim Newsticker behoben.
+	Korrektur diverser Fehler.
+
+Version: 01.11.2013
+	Lange Nachrichten können gekürzt angezeigt werden, mit Link zur Detail-Ansicht.
+	Suchfunktion - Suchbegriff wird farbig hervorgehoben.
+	Newsticker für die aktuellsten Nachrichten.
+
+Version: 24.10.2013
+	Optimierungen im Editor.
+	Vorschau-Funktion verbessert (nachrichten_editor.php)
+	Link zum Seitenanfang (nachrichten.php)
+
+Version: 09.07.2013
+	Bilder werden beim hoch laden automatisch umbenannt.
+	Neue Nachrichten als "Neu" markieren.
+	Zulassen bestimmter HTML-Elemente in der Nachricht.
+	Filter und Begrenzungen um nur bestimmte Nachrichten im Editor anzuzeigen.
+
+Version: 29.06.2013
+	Suchfunktion für Nachrichten
+	Passwortschutz für den Administrator/Autor.
+	Unterteilung der Nachrichten in Kategorien.
+	Sortierung im Editor nach Titel, Nachricht, Datum, … (aufsteigend oder absteigend).
+	Der Admin. kann Nachrichten sperren oder freischalten.
+	OK-Meldungen werden autom. ausgeblendet.
+	Jeder Autor kann nur seine eigenen Nachrichten bearbeiten.
+	Fehler beseitigt.
+
+Version: 04.05.2013
+	Umstellung von mysql() auf pdo() Funktion.
+	Bilder können in den Nachrichten angezeigt werden.
+	Es ist eine Anmeldung von mehreren Autoren (Personen) möglich.
+	Fehler beseitigt.
+
+Version: 18.03.2013
+	Nachrichten in die Datenbank-Tabelle eintragen, ändern oder löschen.
+	Aufteilung der Nachrichten auf mehrere Seiten (Blätter-System).

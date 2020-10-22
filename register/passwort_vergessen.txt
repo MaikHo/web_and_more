@@ -1,0 +1,15 @@
+Anforderung des Passwortes  bei {:HOMEPAGE:}., am {:DATUM:}
+
+Sie haben die "Passwort vergessen"-Funktion gewählt.
+
+Ihr neues Passwort lautet: {:PASSWORT:}
+
+Dieses Passwort ist nicht sicher!
+Bitte melden Sie sich mit dem Passwort auf der Homepage an 
+und ändern Sie das Passwort.
+{:ANMELDUNG:}
+
+Mit freundlichen Grüßen
+ {:ADMIN:} 
+
+Diese E-Mail wurde vom System automatisch versendet. 

@@ -1,0 +1,71 @@
+/**********************************************
+Author : Maik Hoffmann
+Date   : 10.01.2017
+Info   : 
+Hier wird das Aussehen (Gestaltung) festgelegt
+**********************************************/
+
+html {background:#D4D4D4;}
+
+.hilfscontainer{	
+	box-shadow: 2px 5px 5px 3px #aaa;
+	border-radius: 9px;
+	width: 85vw;
+}
+/* Seitenkopf */
+header {	
+	border-radius: 9px; 	
+}
+
+
+/* Hauptteil */
+
+section {width: 100%;}
+article {
+	
+	box-shadow: 2px 5px 5px 3px #aaa;
+	border-radius: 9px; 
+	
+	background-color: White;	
+}
+
+
+/* Navigation */
+nav {
+	background-color: Whitesmoke;
+	text-align: Center;
+	margin: 0 1vw 0 1vw;
+	padding: 0.5rem;
+	word-spacing: 8px;
+	box-shadow: 2px 5px 5px 3px #aaa;
+	 border-radius: 9px;
+}
+.li_nav a:link, a:visited {
+	color: #4169E1;
+}
+ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F6F6F6;
+}
+.li_nav {
+    float: left;
+}
+.li_nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.li_nav a:hover {
+    background-color: #8c8487;
+}
+
+
+footer {		
+	border-radius: 9px;	
+	
+}

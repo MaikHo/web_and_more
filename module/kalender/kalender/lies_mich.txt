@@ -1,0 +1,133 @@
+
+Hinweise zum "Event-Kalender"
+
+Version vom: 08.02.2018
+Eine Aktuelle Version finden Sie unter:
+https://werner-zenk.de/archiv/event-kalender.php
+Dort können Sie auch Hinweise, Fehler und Verbesserungsvorschläge eintragen.
+
+Mit dem Event-Kalender können Sie Events (Ereignisse) in einer DB-Tabelle speichern. 
+Die Events werden übersichtlich in einem Kalender angezeigt. 
+Die Navigation des Kalenders läuft vollständig über JavaScript (AJAX), somit ist kein Seitenwechsel nötig.
+
+Voraussetzungen:
+Webserver (Linux) mit PHP 5.4 (oder höher), eine MySQL/MariaDB-Datenbank und Kenntnisse in HTML, 
+CSS, JavaScript und PHP um die Scripte den eigenen Wünschen anpassen zu können.
+
+Wenn Sie die Dateien bearbeiten, beachten Sie das diese wieder im Zeichensatz: UTF-8 (ohne Signatur) 
+gespeichert werden müssen, andernfalls werden Umlaute im Text nicht korrekt dargestellt. 
+Mehr dazu finden Sie unter: https://werner-zenk.de/tipps/schriftzeichen_richtig_darstellen.php
+
+Hinweise zur Installation
+Führen Sie folgende Anweisungen nacheinander aus:
+ 1. In der Datei: "verbindung.php" tragen Sie Ihre Zugangsdaten (zur Datenbank) ein Dort sind auch weitere Einstellungen möglich.
+ 2. Laden Sie alle Dateien auf Ihrem Webserver hoch.
+ 3. Rufen Sie die Datei: "installation.php" in Ihrem Browser auf.
+ 4. Rufen Sie die Datei: "demo.htm" in Ihrem Browser auf und tragen Sie Ihren ersten Event in die Datenbank ein.
+
+Tipps
+- Suchfunktion - Suche nach einem bestimmten Monat: "2017-01" oder einem bestimmten Tag: "2017-01-20"
+
+
+Nutzungsbedingungen
+
+ Der gesamte "Event Kalender" ist urheberrechtlich geschützt (c) 2018 Werner Zenk alle Rechte vorbehalten.
+ Sie können den "Event Kalender" unter den Bedingungen der GNU General Public License frei verwenden und weiter verbreiten.
+ Siehe Datei: license.txt - http://www.gnu.org/licenses/gpl.html
+
+ Mit dem Einsatz der Scripte akzeptieren Sie meine Nutzungsbedingungen ohne Einschränkungen.
+ Die Scripte sind für die private und kommerzielle Verwendung kostenlos.
+ Ich übernehme keinerlei Haftung bezüglich der Funktionstüchtigkeit oder irgendwelchen Schadens- 
+ oder Ersatzansprüchen, die sich bei der Nutzung der Scripte ergeben.
+ Es wird kein Support für Probleme geben, die bei der Anpassung der Scripte entstehen.
+https://werner-zenk.de/_/impressum.php
+
+
+" Kalender zeigen die Tage an,
+ einen solchen zu erstellen verkürzen diese ;) "
+
+Viel Spaß damit!
+ W. Zenk
+
+
+Version: 08.02.2018
+	Es kann nun das Ende eines Events (Uhrzeit) ausgewählt werden.
+	Die Spalte "ende" wurde hinzugefügt.
+	Die Wochentage (Mo-So) sind anklickbar.
+	Die Tagesansicht zeigt alle Events des gewählten Tages an.
+	Eine bestimmte Kalenderwoche kann ausgewählt werden.
+	Button: "Aktuelle Events" wurde hinzugefügt.
+	Smileys und Symbole vom Smartphone werden nativ dargestellt.
+	JavaScript - Optimierung für Mobile Geräte (Smartphones).
+
+Version: 20.06.2017
+	Jährliche Wiederholung eines Events (für Geburtstage, Feiertage etc.).
+	<del>Aktuelle Events und die Feiertage im Kalender (als Liste) anzeigen (Optional).</del>
+	Kleinere Verbesserungen.
+
+Version: 04.02.2017
+	Ein Event kann nun, im Kalender, zu einem anderen Datum kopiert werden.
+	Suchfunktion im Kalender.
+	Die Funktionen des Kalenderblattes wurden in einer extra Datei verschoben.
+	Ein Event als iCal (ics-Datei) exportieren (Optional).
+	(Die ics-Datei wird beim herunterladen direkt in den Outlook-Kalender eingetragen.)
+	Optimierung für Mobile Geräte (Smartphones).
+	Optimierung der Druckvorschau, zum ausdrucken auf Papier.
+
+Version: 13.01.2017
+	Aus: "MySQL-Event Kalender" wurde der: "Event-Kalender".
+	Prioritäten für Events setzen (Optional).
+	Kalendertage mit Einträgen hervorheben  (* Entfernt am: 18.01.2017).
+	Suchfunktion im Kalender-Editor.
+	Unterstützung für BB-Code.
+	HTML-Tags in der Beschreibung hinzufügen (Optional).
+	Der Kalender wurde für den Ausdruck auf Papier optimiert.
+
+Version: 25.11.2016
+	Umstellung der DB-Tabelle auf ein anderes Datumsformat.
+	Ein Event kann nun, im Kalender, verschoben werden.
+
+Version: 19.11.2016
+	Ein bestimmtes Jahr kann jetzt direkt im Kalender eingetragen werden.
+	Fehler bei den beweglichen Feiertagen behoben.
+	Neue Symbole.
+	Kleinere Verbesserungen.
+
+Version: 03.09.2016
+	Anzeige einer Liste der aktuellen Events (Optional)
+
+Version: 19.01.2016
+	Auswahl einer bestimmten Uhrzeit für den Event.
+	Kalenderblatt für jeden Kalendertag (Optional).
+	Kalender-Anzeige als Liste - CSS verbessert.
+	Formular-Eingabe verbessert.
+	Kleinere Design Änderungen.
+
+Version: 01.11.2015
+	Kleinere Optimierungen
+	PHP 5.4+ Unterstützung
+
+Version: 04.08.2015
+	URLs werden in der Beschreibung des Events autom. umgewandelt.
+
+Version: 06.04.2015
+	Kleinere Fehlerbehebungen in der Navigation.
+	Lizenzbestimmungen angepasst.
+
+Version: 30.10.2014
+	Der Kalender kann als Liste angezeigt werden (* Entfernt am: 18.01.2017).
+	Der Kalender wird nun auch im IE nach einem Eintrag autom. aktualisiert.
+	Kleinere Fehlerbehebungen.
+
+Version: 24.07.2014
+	Die Dateien sind ab sofort mit dem Zeichensatz UTF-8 kodiert.
+	Der Name des Autors kann im Kalender angezeigt werden (Optional).
+
+Version: 02.07.2014
+	Der Kalender wird nach dem eintragen, bearbeiten und löschen eines Events autom. aktualisiert.
+	Probleme mit dem Passwortschutz wurden behoben.
+	Der HTML, CSS, JavaScript und der PHP-Code wurden optimiert.
+
+Version: 01.06.2014
+	Der Event kann direkt im Kalender eingetragen, geändert oder gelöscht werden (Optional).
+	Jeder Benutzer kann nur seinen eigenen Event bearbeiten (der Admin. alle)!

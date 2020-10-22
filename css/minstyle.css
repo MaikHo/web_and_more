@@ -1,0 +1,89 @@
+* {box-sizing:border-box;}
+html {background:#D4D4D4;}
+
+
+article {	
+	
+	
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+/* Navigation */
+nav {
+	
+	text-align: Center;
+	width: 100%;
+	padding: 0;
+	word-spacing: 8px;
+	box-shadow: 2px 5px 5px 3px #aaa;
+	
+}
+ul .li_nav a:link, a:visited {
+	color: black;
+	border: 1px solid black;
+	background-color: #F6F6F6;
+	box-shadow: 2px 5px 5px 3px #aaa;
+	 border-radius: 9px;
+}
+ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+.li_nav {
+    
+}
+ul .li_nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: transparent;
+}
+ul .li_nav a:hover {
+    background-color: #8c8487;
+}
+
+
+
+
+.ok {
+ color: #0094D2;
+}
+
+.ko {
+ color: #EE0000;
+}
+
+.pflichtfeld {
+ color: #FF0000;
+}
+
+.hilfetext {
+ font-family: Arial, Tahoma, Verdana, Sans-Serif;
+ font-size: 0.75rem;
+ font-style: Oblique;
+ color: #009500;
+}
+
+@media only screen and (max-width: 800px) {
+	    #hilfscontainer{
+			width: 100vw ;
+		}
+	    input {
+	        width:99%; font-size:1em; outline: 0;
+	    }
+	}
+

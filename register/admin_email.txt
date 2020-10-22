@@ -1,0 +1,6 @@
+Hallo {:ADMIN:},
+der Benutzer: {:BENUTZER:}
+hat sich am: {:DATUM:}
+auf {:HOMEPAGE:} registriert.
+
+Die Freischaltung erfolgt über den {:FREI:} 

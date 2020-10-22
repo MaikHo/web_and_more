@@ -1,0 +1,68 @@
+body {
+	font-size: 0.70rem;
+}
+h1 {
+	font-size: 0.90rem;
+}
+.hilfscontainer{
+	width: 100vw;
+	background-color: White;
+}
+footer {
+		
+		text-align: Center;
+}
+footer li{
+	display: inline;
+	list-style-type: none;
+}
+article {
+	
+	margin-top: 8vh;
+	
+}
+nav{
+	
+	
+	
+	z-index: 10;
+	
+}
+main{
+	width: 100%;
+}
+.li_nav{
+	
+	display: inline;
+	
+}
+.li_nav a{
+	text-decoration: none;
+}
+
+ul .li_nav {
+    float: none;
+}
+
+#kontaktleiste{
+	background: #e0dee2;	
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#kontaktleiste li{
+	list-style-type: none;
+	text-decoration: none;
+	display: inline;
+	
+}
+#kontaktleiste a{
+	
+	text-decoration: none;
+	display: inline;
+	color: black;
+}
+#kontaktleiste span{
+	padding-left: 20px;
+	padding-right: 20px;
+}

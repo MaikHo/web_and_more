@@ -1,0 +1,10 @@
+suchen und ersetzen von Platzhaltern
+
+$("office:body:contains('{dog}')").html("cat");
+
+office:body wenn das nicht funzt dann document nehmen.
+
+als php page wo alle zu ersetzenden Platzhaltern eingebunden werden
+
+Testaufruf http://server/new_cms/third_party/wodotexteditor-0.5.9/localeditor.html
+

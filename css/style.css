@@ -1,0 +1,296 @@
+/**********************************************
+Author : Maik Hoffmann
+Date   : 10.01.2017
+Info   : 
+Hier wird das Aussehen (Gestaltung) festgelegt
+**********************************************/
+*{box-sizing:border-box;}
+body {
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 1rem;
+	color: #000000; 
+	padding: 0;
+	margin: 0; 
+	margin-bottom: -10vh;
+	background-color: White;
+}
+.hilfscontainer{	
+	padding: 0;	
+	margin: Auto;	
+	background-color: White;	
+	min-height: 90vh;	
+}
+
+/* Seitenkopf */
+header {
+	margin: 0;
+	padding: 0;
+	padding-top: 1vh;
+	text-align: center; 
+	
+	font-size: 1.4rem;
+}
+header img{
+	max-height: 40vh;
+	max-width: 100%;
+}
+
+#load_html img:not(.nicht_mittig){
+	display: block;
+    margin: 0 auto;
+}
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+#load_html iframe, #show_page iframe {
+  max-width: 100%;
+  border: none;
+  margin: auto;
+  display:block;
+}
+
+.preview{
+	max-width: 100%;
+  border: none;
+  margin: auto;
+  display:block;
+}
+
+@font-face { 
+font-family: "SHOWG"; 
+src: url("../fonts/SHOWG.TTF"); 
+}
+
+ul .li_nav a{
+	font-size: 20px;
+}
+
+.li_nav #Home{
+	font-family: SHOWG;
+	font-size: 30px;
+}
+
+
+
+/* Hauptteil */
+main {
+	margin: auto;
+	padding: 0;
+	min-height: 47vh;
+	width: 75vw;
+}
+section {width: 100%;}
+article {
+	margin-top: 0;
+	margin-right: 2vw;
+	margin-left: 2vw;
+	padding: 2vw;	
+	min-height: 44vh;
+	margin-bottom: 1.5vh;
+}
+
+.editable_elements img{
+			max-width: 100%;
+		}
+
+
+
+
+
+
+
+
+footer {
+	background: #e0dee2;
+	margin: 0;
+	padding: 0;	
+	text-align: Center;		
+    
+	height: 7vh;
+	width:100%;		
+}
+
+
+
+
+
+
+
+
+.hidden {
+  display: none;
+}
+
+label{
+	display: inline-block;
+	width: 150px;
+}
+
+
+
+.ok {
+ color: #0094D2;
+}
+
+.ko {
+ color: #EE0000;
+}
+
+.pflichtfeld {
+ color: #FF0000;
+}
+
+.hilfetext {
+ font-family: Arial, Tahoma, Verdana, Sans-Serif;
+ font-size: 0.75rem;
+ font-style: Oblique;
+ color: #009500;
+}
+
+
+textarea {
+ font-family: Verdana, Arial, Sans-Serif;
+ font-size: 1rem;
+ max-width: 200%;
+}
+
+
+
+.kontaktformular {
+	width: 100%;
+
+padding: 10px;
+
+font-size:12px;
+}
+
+input { 
+		margin-bottom: 10px;
+			margin-top: 10px;
+			
+	}
+
+
+span.pflichtfeld {
+font-size: 0.90rem;
+color: Red;
+}
+
+span.hilfetext {
+font-family: Arial, Tahoma, Sans-Serif;
+font-size: 0.80rem;
+font-style: Oblique;
+}
+
+caption h3 {
+font-weight: Normal;
+}
+  
+
+.dialog_green{
+	
+	background: green;
+	padding: 20px;
+}
+
+#cookie_dialog {
+  margin: 100px auto;
+  padding: 20px;
+  background: #fff;
+  border: 2px solid red;
+  max-width: 600px;
+  border-radius: 6px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  
+  z-index: 901;
+
+}
+#cookie_dialog div {
+  margin-bottom: 20px;
+
+}
+
+#cookie_dialog a {
+	
+    
+}
+#close_dialog{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	display: inline;  
+	background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+	float: right;
+	
+}
+
+
+
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
